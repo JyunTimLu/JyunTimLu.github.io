@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Android 依賴Github Project | TimLu&#39;s Blog</title>
+  <title>好用的 Android Studio Plugins | TimLu&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Dependencies Project From Github">
+  <meta name="description" content="好用的 Android Studio Plugins">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Android 依賴Github Project">
-<meta property="og:url" content="jyuntimlu.github.io/2016/09/26/Android-Dependcies-Github/index.html">
+<meta property="og:title" content="好用的 Android Studio Plugins">
+<meta property="og:url" content="jyuntimlu.github.io/2017/04/02/Android-Studio-Plugins/index.html">
 <meta property="og:site_name" content="TimLu's Blog">
-<meta property="og:description" content="Dependencies Project From Github">
-<meta property="og:updated_time" content="2016-09-26T03:24:00.089Z">
+<meta property="og:description" content="好用的 Android Studio Plugins">
+<meta property="og:updated_time" content="2017-04-02T12:31:10.993Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Android 依賴Github Project">
-<meta name="twitter:description" content="Dependencies Project From Github">
+<meta name="twitter:title" content="好用的 Android Studio Plugins">
+<meta name="twitter:description" content="好用的 Android Studio Plugins">
   
     <link rel="alternate" href="/atom.xml" title="TimLu&#39;s Blog" type="application/atom+xml">
   
@@ -63,10 +63,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-Android-Dependcies-Github" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Android-Studio-Plugins" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2016/09/26/Android-Dependcies-Github/" class="article-date">
-  <time datetime="2016-09-26T01:21:52.000Z" itemprop="datePublished">2016-09-26</time>
+    <a href="/2017/04/02/Android-Studio-Plugins/" class="article-date">
+  <time datetime="2017-04-02T11:51:52.000Z" itemprop="datePublished">2017-04-02</time>
 </a>
     
   </div>
@@ -77,7 +77,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Android 依賴Github Project
+      好用的 Android Studio Plugins
     </h1>
   
 
@@ -85,21 +85,26 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Dependencies Project From Github</p>
+        <p>好用的 Android Studio Plugins</p>
 <a id="more"></a>
-<p>在Project的build.gradle下加入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">allprojects &#123;</span><br><span class="line">    repositories &#123; </span><br><span class="line">        jcenter()</span><br><span class="line">        maven &#123; url <span class="string">"https://jitpack.io"</span> &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>在Application build.gradle 加入需要引入的Github Project<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">dependencies &#123;</span><br><span class="line">    compile <span class="string">'com.github.User:Repo:Tag'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>開發過程中還沒有Release Tag 可以用commit sha 替代</p>
+<p>來紀錄一下目前有經常在使用的Android Studio Plugin</p>
+<h3 id="Android-ButterKnife-Zelezny"><a href="#Android-ButterKnife-Zelezny" class="headerlink" title="Android ButterKnife Zelezny"></a>Android ButterKnife Zelezny</h3><p>搭配ButterKnife使用,在xml檔Layout完後幫你Generator到你的java檔</p>
+<h3 id="Android-Studio-Prettify"><a href="#Android-Studio-Prettify" class="headerlink" title="Android Studio Prettify"></a>Android Studio Prettify</h3><p>把在Java檔的文字轉換至strings.xml</p>
+<h3 id="CheckStyle-IDEA"><a href="#CheckStyle-IDEA" class="headerlink" title="CheckStyle-IDEA"></a>CheckStyle-IDEA</h3><p>檢查你寫的Code是否有照既定的規範</p>
+<h3 id="Genymotion"><a href="#Genymotion" class="headerlink" title="Genymotion"></a>Genymotion</h3><p>Genymotion 是一款好用的Android模擬器,裝上這個Plugin後可以直接整合到IDE裡</p>
+<h3 id="GsonFormat"><a href="#GsonFormat" class="headerlink" title="GsonFormat"></a>GsonFormat</h3><p>超級歡樂的Plugin,能把Json格式直接轉成JavaBean</p>
+<h3 id="CodeGlance"><a href="#CodeGlance" class="headerlink" title="CodeGlance"></a>CodeGlance</h3><p>讓你的IDE右邊多了一個像Sublime右方的小視窗,讓你可以快速定位程式碼,不用一直滾你的滑鼠滾輪</p>
+<h3 id="FreeLine"><a href="#FreeLine" class="headerlink" title="FreeLine"></a>FreeLine</h3><p>阿里巴巴出品,比InstanRun Build還快,讓生命不用浪費在等GradleBuild,歡樂<br>但是目前只能預設用Debug的BuildType</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="jyuntimlu.github.io/2016/09/26/Android-Dependcies-Github/" data-id="cj10o3j3l0001ysewb16chakp" class="article-share-link">Share</a>
+      <a data-url="jyuntimlu.github.io/2017/04/02/Android-Studio-Plugins/" data-id="cj10o3j3l0003ysewl7sk0m3w" class="article-share-link">Share</a>
       
-        <a href="jyuntimlu.github.io/2016/09/26/Android-Dependcies-Github/#disqus_thread" class="article-comment-link">Comments</a>
+        <a href="jyuntimlu.github.io/2017/04/02/Android-Studio-Plugins/#disqus_thread" class="article-comment-link">Comments</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github/">Github</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li></ul>
 
     </footer>
   </div>
@@ -107,19 +112,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/04/02/Android-Studio-Plugins/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          好用的 Android Studio Plugins
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/06/02/Android-ACRA/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/09/26/Android-Dependcies-Github/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Android ACRA-自動發送CrashReport</div>
+      <div class="article-nav-title">Android 依賴Github Project</div>
     </a>
   
 </nav>
